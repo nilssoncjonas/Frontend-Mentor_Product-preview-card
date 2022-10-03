@@ -1,6 +1,6 @@
 $primary-color-dark: hsl(158, 36%, 37%);
 $primary-color-light: hsl(30, 38%, 92%);
-
+$active-dark-green: #1a4031;
 $neutral-color-very-dark:hsl(212, 21%, 14%);
 $neutral-color-dark: hsl(228, 12%, 48%);
 $neutral-color-white: hsl(0, 0%, 100%);
@@ -131,6 +131,11 @@ img {
     .add-to-cart {
         margin: 10px auto 30px auto;
         width: 85%;
+        &:hover {
+            background-color: $active-dark-green;
+            transition: all 0.3s ease 0s;
+        }
+        
     
     }
 }
