@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
 * {
   box-sizing: border-box;
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -11,21 +11,22 @@ body {
 }
 
 .wrap {
+  margin-top: 50px;
   width: 375px;
   padding: 20px 10px;
   align-items: center;
 }
 
-.product-img {
-  width: 355px;
-  display: inline;
-  margin-bottom: 10px;
-  border-radius: 10px 10px 0px 0px;
-}
-
 .container {
   background: hsl(0deg, 0%, 100%);
   border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
 }
 
 .type {
@@ -42,32 +43,35 @@ body {
   font-weight: 700;
   color: hsl(212deg, 21%, 14%);
   margin: 20px;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .info-text {
   font-weight: 500;
   color: hsl(228deg, 12%, 48%);
   line-height: 1.7;
-  margin: 20px;
+  margin: 10px 20px;
   font-size: 0.9em;
 }
 
 .bottom {
-  padding-bottom: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0p;
 }
 
 .price {
   font-family: "Fraunces", serif;
   color: hsl(158deg, 36%, 37%);
   font-size: 2em;
-  margin: 20px 25px;
+  margin: 15px 0px 5px 15px;
 }
 
 .reg-price {
   text-decoration: line-through;
   color: hsl(228deg, 12%, 48%);
   font-size: 0.8em;
+  margin: 25px 0px 0px 10px;
 }
 
 .cart-icon {
@@ -75,14 +79,21 @@ body {
 }
 
 .add-to-cart {
-  margin: 20px auto;
-  width: 85%;
+  margin: 5px auto 15px auto;
+  width: 90%;
   display: block;
   text-align: center;
   color: hsl(0deg, 0%, 100%);
   font-weight: 700;
   text-decoration: none;
-  padding: 15px 20px;
+  padding: 15px 15px;
   background-color: hsl(158deg, 36%, 37%);
   border-radius: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .wrap {
+    height: 900px;
+    width: 900px;
+  }
 }/*# sourceMappingURL=main.css.map */
