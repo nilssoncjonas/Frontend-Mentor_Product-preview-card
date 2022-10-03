@@ -10,34 +10,29 @@ $neutral-color-white: hsl(0, 0%, 100%);
 * {
     box-sizing: border-box;
     margin: 0 auto ;
-    padding: 0;
-    
+    padding: 0;   
 }
 body {
     
     font-family: 'Montserrat', sans-serif;
-    background-color: $primary-color-light;
-    
-    
+    background-color: $primary-color-light;    
 }
-
 .wrap {
-    margin-top: 50px;
+    margin: 50px auto;
     width: 375px;
-    padding: 20px 10px;
-    align-items: center;
-}
-.container {
-    background: $neutral-color-white;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-img {
     
+    background: $neutral-color-white;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+}
+img {    
     border-radius: 10px 10px 0px 0px;
     width: 100%;
+}
+.text-container {
+    display: flex;
+    flex-wrap: wrap;
+
 }
 .type {
     font-weight: 500;
@@ -45,8 +40,7 @@ img {
     text-transform: uppercase;
     color: $neutral-color-dark;
     margin: 20px;
-    font-size: 0.8em;
-    
+    font-size: 0.8em;   
 }
 .heading {
     font-family: 'Fraunces', serif;
@@ -62,9 +56,7 @@ img {
     margin: 10px 20px;
     font-size: 0.9em;
 }
-
 .bottom {
-    // text-align: left;
     display: flex;
     flex-wrap: wrap;
     margin: 0p;
@@ -73,16 +65,13 @@ img {
     font-family: 'Fraunces', serif;
     color: $primary-color-dark;
     font-size: 2em;
-    margin: 15px 0px 5px 15px;
-    
+    margin: 15px 0px 5px 15px;    
 }
 .reg-price {
     text-decoration: line-through;
     color: $neutral-color-dark;
     font-size: 0.8em;
     margin: 25px 0px 0px 10px;
-    
-
 }
 .cart-icon {
     margin-right: 10px; 
@@ -98,16 +87,50 @@ img {
     padding: 15px 15px;
     background-color: $primary-color-dark;
     border-radius: 10px;
-
 }
-
-
-@media screen and (min-width: 900px){
+@media screen and (min-width: 800px){
     .wrap {
-        height: 900px;
-        width: 900px;
+        width: 600px;
+        height: 450px;
+        display: flex;
+        border-radius: 10px 10px 10px 10px;
     }
-  
+    img {
+        border-radius: 10px 0px 0px 10px;
+    }
+    .img-container {
+        width: 50%;
 
+    }
 
+    .text-container {
+        flex-wrap: wrap;
+        width: 50%;
+        height: 100%;
+        margin: 0px;
+    }
+    .type {
+        margin: 30px 0px 0px 30px;        
+    }
+    .heading {
+        margin: 10px 30px 10px 30px;
+        line-height: 1;
+    }
+    .info-text {
+        margin: 0px 20px 0px 30px;    
+    }
+    .bottom {       
+        margin: 0px 10px 10px 5px;
+    }
+    .price  {
+        margin: 15px 0px 5px 25px;        
+    }
+    .reg-price {        
+        margin: 25px 0px 0px 20px;    
+    }
+    .add-to-cart {
+        margin: 10px auto 30px auto;
+        width: 85%;
+    
+    }
 }
